@@ -1,0 +1,93 @@
+<head>
+  <title>myapp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+
+  <div class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">Project name</a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li type="button"><a href="#">Forum</a></li>
+            <li type="button"><a href="#">Messages</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Search <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li>
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                          <button class="btn btn-default" type="button">Go!</button>
+                        </span>
+                      </div><!-- /input-group -->
+                  </li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            {{> loginButtons}} <!-- here -->
+        </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="http://static.independent.co.uk/s3fs-public/styles/story_large/public/thumbnails/image/2013/01/24/12/v2-cute-cat-picture.jpg" alt="cat">
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="http://static.independent.co.uk/s3fs-public/styles/story_large/public/thumbnails/image/2013/01/24/12/v2-cute-cat-picture.jpg" alt="cat">
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="http://static.independent.co.uk/s3fs-public/styles/story_large/public/thumbnails/image/2013/01/24/12/v2-cute-cat-picture.jpg" alt="cat">
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="http://static.independent.co.uk/s3fs-public/styles/story_large/public/thumbnails/image/2013/01/24/12/v2-cute-cat-picture.jpg" alt="cat">
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="http://static.independent.co.uk/s3fs-public/styles/story_large/public/thumbnails/image/2013/01/24/12/v2-cute-cat-picture.jpg" alt="cat">
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img src="http://static.independent.co.uk/s3fs-public/styles/story_large/public/thumbnails/image/2013/01/24/12/v2-cute-cat-picture.jpg" alt="cat">
+        </a>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="thumbnail">
+          <img src="http://i.telegraph.co.uk/multimedia/archive/03235/potd-husky_3235255k.jpg" alt="dog">
+          <div class="caption">
+            <h3>Thumbnail label</h3>
+            <p>...</p>
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<template name="_loginButtonsAdditionalLoggedInDropdownActions">
+    <button class="btn btn-default btn-block" id="login-buttons-edit-profile">Edit profile</button>
+</template>
